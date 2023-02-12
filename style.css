@@ -1,8 +1,22 @@
-body{
+html{
 	margin:0;
-	background-image: linear-gradient(to right, red, yellow);
+	background-image: linear-gradient(to right, red, yellow) cover;
 	height: 100%;
 	text-align: center;
+	justify-content: center;
+}
+
+body{
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+	font-family: Arial;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 1.0);
+	font-stretch: semi-expanded;
 }
 
 h1{
@@ -23,8 +37,23 @@ h3{
 
 
 .button{
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size: 105%;
+	font-weight: bold;
 	cursor: pointer;
 	margin: 30px;
+	display: inline-block;
+	text-align: center;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 40px;
+	padding: 15px;
+	background-size: contain;
+	transition: all 0.2s;
+}
+
+.button:hover{
+	transform: scale(1.1);
 }
 
 
